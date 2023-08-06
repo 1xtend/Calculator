@@ -105,7 +105,9 @@ function Calculator() {
 
         <h2 className={classes.title}>calculator</h2>
 
-        <a href="#" className={classes.iconLink}></a>
+        <a href="#" className={classes.iconLink}>
+          <img src="../../../arrowLink.svg" alt="" />
+        </a>
       </header>
 
       <div className={classes.actions}>
