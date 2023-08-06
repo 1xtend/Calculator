@@ -11,7 +11,7 @@ function Button({ value, onClick }) {
       value === '+' ||
       value === '-' ||
       value === 'x' ||
-      value === '/' ||
+      value === '÷' ||
       value === 'CE' ||
       value === 'C'
     );

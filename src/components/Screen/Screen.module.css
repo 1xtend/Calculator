@@ -10,3 +10,10 @@
   padding: 5px 16px;
   white-space: nowrap;
 }
+
+@media (max-width: 479.98px) {
+  .screen {
+    min-height: 46px;
+    padding: 3px 8px;
+  }
+}

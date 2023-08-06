@@ -1,8 +1,6 @@
 import classes from './Screen.module.css';
 
-import { useState } from 'react';
-
-function Screen({ result }) {
+function Screen({ calc }) {
   return (
     <div
       className={classes.screen}
@@ -10,7 +8,8 @@ function Screen({ result }) {
         fontSize: '32px',
       }}
     >
-      {result}
+      <span>{calc.sign && !calc.number && calc.sign}</span>
+      {calc.number ? calc.number : calc.result}
     </div>
   );
 }

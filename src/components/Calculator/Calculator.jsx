@@ -73,7 +73,7 @@ function Calculator() {
       setCalc({
         ...calc,
         result:
-          calc.number === '0' && calc.sign === '/'
+          calc.number === '0' && calc.sign === '÷'
             ? console.log('zero division error')
             : math(Number(calc.result), Number(calc.number), calc.sign),
         sign: '',
@@ -87,7 +87,7 @@ function Calculator() {
       ? handleResetClick(btn)
       : btn === '.'
       ? handleDotClick(e)
-      : btn === '+' || btn === '-' || (btn === 'x') | (btn === '/')
+      : btn === '+' || btn === '-' || (btn === 'x') | (btn === '÷')
       ? handleSignClick(e)
       : btn === '='
       ? handleEqualsClick()
@@ -116,7 +116,7 @@ function Calculator() {
       </header>
 
       <div className={classes.actions}>
-        <Screen result={calc.number ? calc.number : calc.result}></Screen>
+        <Screen calc={calc}></Screen>
         <ButtonsList store={store} handleButtonClick={handleButtonClick} />
       </div>
     </div>

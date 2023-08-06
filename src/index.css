@@ -23,7 +23,6 @@
 
 body {
   color: var(--color-primary);
-  padding: 50px;
   font-family: 'IBM Plex Mono', monospace;
   background: url('../bgVector.svg') no-repeat, var(--color-blue);
   background-size: cover;
@@ -31,7 +30,7 @@ body {
 
 .wrapper {
   min-height: 100%;
-  /* overflow: hidden; */
+  padding: 15px;
 
   display: flex;
   justify-content: center;

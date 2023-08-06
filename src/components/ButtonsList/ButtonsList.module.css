@@ -14,3 +14,8 @@
 .item.equal {
   grid-column: 3 / 5;
 }
+@media (max-width: 479.98px) {
+  .list {
+    gap: 12px;
+  }
+}
