@@ -23,9 +23,10 @@
 
 body {
   color: var(--color-primary);
-  background-color: var(--color-blue);
   padding: 50px;
   font-family: 'IBM Plex Mono', monospace;
+  background: url('../bgVector.svg') no-repeat, var(--color-blue);
+  background-size: cover;
 }
 
 .wrapper {

@@ -10,10 +10,6 @@ function math(a, b, sign) {
   return sign === '+' ? a + b : sign === '-' ? a - b : sign === 'x' ? a * b : a / b;
 }
 
-function toLocaleString(num) {
-  String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, '$1 ');
-}
-
 function Calculator() {
   const [calc, setCalc] = useState({
     sign: '',
@@ -72,7 +68,7 @@ function Calculator() {
     });
   }
 
-  function handleEqualsClick(e) {
+  function handleEqualsClick() {
     if (calc.number && calc.result) {
       setCalc({
         ...calc,
