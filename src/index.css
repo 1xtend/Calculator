@@ -1,0 +1,38 @@
+:root {
+  --color-primary: #000;
+  --color-white: #fff;
+
+  --color-yellow: #ffff50;
+  --color-yellow-hover: rgb(255, 217, 0);
+
+  --color-blue: #4d7bff;
+  --color-blue-hover: #0949ff;
+
+  --color-red: #ff5c5c;
+  --color-red-hover: #ff1818;
+
+  --color-pink: #ff90ff;
+  --color-pink-hover: #ff4cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-primary);
+  background-color: var(--color-blue);
+  padding: 50px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.wrapper {
+  min-height: 100%;
+  /* overflow: hidden; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

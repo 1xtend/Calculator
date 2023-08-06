@@ -1,0 +1,12 @@
+.calculator {
+  max-width: 400px;
+  width: 100%;
+  border: 8px solid #000;
+  background: #7fff5b;
+  box-shadow: 16px 12px 0px 0px #000;
+  padding: 12px;
+}
+
+.actions > *:not(:last-child) {
+  margin-bottom: 20px;
+}
