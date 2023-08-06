@@ -105,8 +105,13 @@ function Calculator() {
 
         <h2 className={classes.title}>calculator</h2>
 
-        <a href="#" className={classes.iconLink}>
-          <img src="../../../arrowLink.svg" alt="" />
+        <a
+          href="https://github.com/1xtend/Calculator/tree/main"
+          className={classes.iconLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../../arrowLink.svg" alt="arrow" />
         </a>
       </header>
 
