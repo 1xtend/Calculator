@@ -25,26 +25,6 @@
   gap: 8px;
 }
 
-.dots {
-  display: flex;
-  gap: 8px;
-  justify-self: flex-start;
-}
-
-.dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid var(--color-white);
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.dot:active,
-.dot:focus {
-  outline: none;
-}
-
 .title {
   font-size: 24px;
   text-transform: uppercase;

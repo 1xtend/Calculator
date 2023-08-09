@@ -5,6 +5,7 @@ import classes from './Calculator.module.css';
 import store from '../../store.js';
 
 import { useState } from 'react';
+import ThemeSwitchers from '../ThemeSwitchers/ThemeSwitchers';
 
 function math(a, b, sign) {
   return sign === '+' ? a + b : sign === '-' ? a - b : sign === 'x' ? a * b : a / b;
@@ -97,11 +98,7 @@ function Calculator() {
   return (
     <div className={classes.calculator}>
       <header className={classes.header}>
-        <div className={classes.dots}>
-          <button className={classes.dot}></button>
-          <button className={classes.dot}></button>
-          <button className={classes.dot}></button>
-        </div>
+        <ThemeSwitchers />
 
         <h2 className={classes.title}>calculator</h2>
 
