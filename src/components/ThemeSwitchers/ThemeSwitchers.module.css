@@ -13,6 +13,16 @@
   background-color: transparent;
 }
 
+.dot:nth-child(1).activeBtn {
+  background-color: var(--color-2);
+}
+.dot:nth-child(2).activeBtn {
+  background-color: var(--color-2);
+}
+.dot:nth-child(3).activeBtn {
+  background-color: var(--color-2);
+}
+
 .dot:active,
 .dot:focus {
   outline: none;

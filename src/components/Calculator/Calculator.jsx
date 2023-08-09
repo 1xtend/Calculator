@@ -11,7 +11,7 @@ function math(a, b, sign) {
   return sign === '+' ? a + b : sign === '-' ? a - b : sign === 'x' ? a * b : a / b;
 }
 
-function Calculator() {
+function Calculator({ changeTheme, theme }) {
   const [calc, setCalc] = useState({
     sign: '',
     number: 0,
@@ -98,7 +98,7 @@ function Calculator() {
   return (
     <div className={classes.calculator}>
       <header className={classes.header}>
-        <ThemeSwitchers />
+        <ThemeSwitchers theme={theme} changeTheme={changeTheme} />
 
         <h2 className={classes.title}>calculator</h2>
 
@@ -108,7 +108,15 @@ function Calculator() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../../../arrowLink.svg" alt="arrow" />
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 14V13H3V12H4V11H5V10H6V9H7V8H8V7H9V6H10V5H11V4H12V10H14V0H4V2H10V3H9V4H8V5H7V6H6V7H5V8H4V9H3V10H2V11H1V12H0V14H2Z" />
+          </svg>
         </a>
       </header>
 

@@ -1,9 +1,9 @@
 .calculator {
   max-width: 400px;
   width: 100%;
-  border: 8px solid #000;
-  background: #7fff5b;
-  box-shadow: 16px 12px 0px 0px #000;
+  border: 8px solid var(--color-primary);
+  background: var(--color-5);
+  box-shadow: 16px 12px 0px 0px var(--color-primary);
   padding: 12px;
   position: relative;
 }
@@ -35,7 +35,6 @@
 .iconLink {
   justify-self: flex-end;
   padding: 3px;
-  /* background-color: #fff; */
   width: 25px;
   height: 25px;
   display: flex;
@@ -43,27 +42,37 @@
   align-items: center;
 }
 
-.iconLink img {
+.iconLink svg {
   width: 14px;
   height: 14px;
+  fill: var(--color-white);
 }
 
 .iconLink:hover {
   border: 2px solid var(--color-white);
-  background-color: var(--color-blue);
+  background-color: var(--color-5);
+}
+
+.iconLink:hover svg {
+  fill: var(--color-primary);
 }
 
 .iconLink:active,
 .iconLink:focus {
   border: 2px solid var(--color-white);
-  background-color: var(--color-blue-hover);
+  background-color: var(--color-5-hover);
   outline: none;
+}
+
+.iconLink:active svg,
+.iconLink:focus svg {
+  fill: var(--color-primary);
 }
 
 @media (max-width: 767.98px) {
   .calculator {
     max-width: 95vw;
-    box-shadow: 8px 6px 0px 0px #000;
+    box-shadow: 8px 6px 0px 0px var(--color-primary);
   }
 }
 

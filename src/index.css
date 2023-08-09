@@ -1,30 +1,73 @@
-:root {
-  --color-primary: #000;
-  --color-white: #fff;
-
-  --color-yellow: #ffff50;
-  --color-yellow-hover: rgb(255, 217, 0);
-
-  --color-blue: #4d7bff;
-  --color-blue-hover: #0949ff;
-
-  --color-red: #ff5c5c;
-  --color-red-hover: #ff1818;
-
-  --color-pink: #ff90ff;
-  --color-pink-hover: #ff4cff;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body.theme1 {
+  --color-primary: #000;
+  --color-white: #fff;
+
+  --color-1: #ffff50;
+  --color-1-hover: #ffd900;
+
+  --color-2: #4d7bff;
+  --color-2-hover: #0949ff;
+
+  --color-3: #ff5c5c;
+  --color-3-hover: #ff1818;
+
+  --color-4: #ff90ff;
+  --color-4-hover: #ff4cff;
+
+  --color-5: #7fff5b;
+  --color-5-hover: #36f400;
+}
+
+body.theme2 {
+  --color-primary: #000;
+  --color-white: #fff;
+
+  --color-1: #ff90ff;
+  --color-1-hover: #ff4cff;
+
+  --color-2: #ff5c5c;
+  --color-2-hover: #ff1818;
+
+  --color-3: #7fff5b;
+  --color-3-hover: #36f400;
+
+  --color-4: #ffff50;
+  --color-4-hover: #ffd900;
+
+  --color-5: #4d7bff;
+  --color-5-hover: #0949ff;
+}
+
+body.theme3 {
+  --color-primary: #fff;
+  --color-white: #000;
+
+  --color-1: #000;
+  --color-1-hover: #333;
+
+  --color-2: #000;
+  --color-2-hover: #333;
+
+  --color-3: #333;
+  --color-3-hover: #444;
+
+  --color-4: #000;
+  --color-4-hover: #333;
+
+  --color-5: #777;
+  --color-5-hover: #555;
+}
+
 body {
   color: var(--color-primary);
   font-family: 'IBM Plex Mono', monospace;
-  background: url('../bgVector.svg') no-repeat, var(--color-blue);
+  background: url('../bgVector.svg') no-repeat, var(--color-2);
   background-size: cover;
 }
 

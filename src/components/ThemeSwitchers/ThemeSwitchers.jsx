@@ -1,11 +1,20 @@
 import classes from './ThemeSwitchers.module.css';
 
-function ThemeSwitchers() {
+import classNames from 'classnames';
+
+const buttonThemes = ['theme1', 'theme2', 'theme3'];
+
+function ThemeSwitchers({ theme, changeTheme }) {
   return (
     <div className={classes.dots}>
-      <button className={classes.dot}></button>
-      <button className={classes.dot}></button>
-      <button className={classes.dot}></button>
+      {buttonThemes.map((btnTheme) => (
+        <button
+          data-theme={btnTheme}
+          key={btnTheme}
+          onClick={() => changeTheme(btnTheme)}
+          className={classNames(classes.dot, btnTheme === theme ? classes.activeBtn : '')}
+        ></button>
+      ))}
     </div>
   );
 }
